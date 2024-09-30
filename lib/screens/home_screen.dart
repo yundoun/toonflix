@@ -1,14 +1,10 @@
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
-  final Color backgroundColor;
-  final Widget body;
-
-  const HomeScreen({
-    required this.backgroundColor,
-    required this.body,
-    super.key,
-  });
+  const HomeScreen(
+      {super.key,
+      required Color backgroundColor,
+      required SingleChildScrollView body});
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
